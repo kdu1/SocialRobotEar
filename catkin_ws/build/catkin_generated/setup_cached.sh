@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/vboxuser/catkin_ws/build'
+export CMAKE_PREFIX_PATH="/home/vboxuser/SocialRobotEar/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/vboxuser/SocialRobotEar/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/home/vboxuser/SocialRobotEar/catkin_ws/build'
+export PYTHONPATH="/home/vboxuser/SocialRobotEar/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/vboxuser/SocialRobotEar/catkin_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/vboxuser/SocialRobotEar/catkin_ws/src:$ROS_PACKAGE_PATH"

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/vboxuser/catkin_ws/devel/setup.sh
+    local-name: /home/vboxuser/SocialRobotEar/catkin_ws/devel/setup.sh

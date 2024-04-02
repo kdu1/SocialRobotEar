@@ -1,2 +1,2 @@
 ear
--DCATKIN_DEVEL_PREFIX=/home/vboxuser/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vboxuser/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/vboxuser/SocialRobotEar/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vboxuser/SocialRobotEar/catkin_ws/install -G Unix Makefiles

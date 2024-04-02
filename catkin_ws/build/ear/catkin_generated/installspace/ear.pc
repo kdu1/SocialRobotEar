@@ -1,4 +1,4 @@
-prefix=/home/vboxuser/catkin_ws/install
+prefix=/home/vboxuser/SocialRobotEar/catkin_ws/install
 
 Name: ear
 Description: Description of ear

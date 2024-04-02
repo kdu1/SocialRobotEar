@@ -1,8 +1,0 @@
-prefix=/home/vboxuser/catkin_ws/install
-
-Name: dummy_personality
-Description: Description of dummy_personality
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -ldummy_personality
-Requires: roscpp rospy std_msgs
