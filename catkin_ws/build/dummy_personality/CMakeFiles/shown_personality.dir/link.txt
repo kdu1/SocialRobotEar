@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/shown_personality.dir/src/personality_talker.cpp.o  -o /home/vboxuser/catkin_ws/devel/lib/dummy_personality/shown_personality 
