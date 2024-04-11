@@ -4,7 +4,7 @@ Pi Servo module.
 
 import rospy
 import time 
-#import RPi.GPIO as GPIO 
+import RPi.GPIO as GPIO 
 from std_msgs.msg import String
 from std_msgs.msg import Float32
 
@@ -61,9 +61,6 @@ class earwrapper:
         elif(move_left < 3):
             move_left = 3
 
-        print("left ear: ", move_left)
-        self.left_ear.ChangeDutyCycle(move_left)
-
         #right ear
         right_degree = 1.5/90.0
         move_right = 2 + right_degree*angle
@@ -73,8 +70,13 @@ class earwrapper:
         elif(move_right > 3.5):
             move_right = 3.5
 
+        #move
+        print("left ear: ", move_left)
+        self.left_ear.ChangeDutyCycle(move_left)
+    
         print("right ear: ", move_right)
         self.right_ear.ChangeDutyCycle(move_right)
+        time.sleep(0.03)
 
     def poses(self, msg):
         emotion = msg.data
@@ -98,6 +100,12 @@ class earwrapper:
         #convert degrees to ChangeDutyCycle amount and move ears
         self.convert_angle(inmsg)
         
+    def callback_twitch(self, msg):
+        self.left_ear.convert_angle(46)
+        self.right_ear.convert_angle(46)
+        time.sleep(0.001)
+        self.left_ear.convert_angle(45)
+        self.right_ear.convert_angle(45)
 
 
     
@@ -108,7 +116,6 @@ class earwrapper:
     
 
     def __init__(self):
-        #rospy.Subscriber("Shown_personality", String, callback_personality)
 
         rospy.Subscriber("Ear_angle", Float32, self.convert_angle) #ears always mirror each other
         rospy.Subscriber("Shown_personality", String, self.poses)
