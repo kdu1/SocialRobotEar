@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vboxuser/SocialRobotEar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vboxuser/SocialRobotEar/build
 
 # Utility rule file for std_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build: std_msgs_generate_me
 .PHONY : ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 
 ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/vboxuser/catkin_ws/build/ear && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/vboxuser/SocialRobotEar/build/ear && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/vboxuser/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/catkin_ws/src /home/vboxuser/catkin_ws/src/ear /home/vboxuser/catkin_ws/build /home/vboxuser/catkin_ws/build/ear /home/vboxuser/catkin_ws/build/ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vboxuser/SocialRobotEar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/SocialRobotEar/src /home/vboxuser/SocialRobotEar/src/ear /home/vboxuser/SocialRobotEar/build /home/vboxuser/SocialRobotEar/build/ear /home/vboxuser/SocialRobotEar/build/ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ear/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 

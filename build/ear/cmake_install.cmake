@@ -1,8 +1,8 @@
-# Install script for directory: /home/vboxuser/catkin_ws/src/ear
+# Install script for directory: /home/vboxuser/SocialRobotEar/src/ear
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vboxuser/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vboxuser/SocialRobotEar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/vboxuser/catkin_ws/build/ear/catkin_generated/safe_execute_install.cmake")
+  include("/home/vboxuser/SocialRobotEar/build/ear/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vboxuser/catkin_ws/build/ear/catkin_generated/installspace/ear.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vboxuser/SocialRobotEar/build/ear/catkin_generated/installspace/ear.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ear/cmake" TYPE FILE FILES
-    "/home/vboxuser/catkin_ws/build/ear/catkin_generated/installspace/earConfig.cmake"
-    "/home/vboxuser/catkin_ws/build/ear/catkin_generated/installspace/earConfig-version.cmake"
+    "/home/vboxuser/SocialRobotEar/build/ear/catkin_generated/installspace/earConfig.cmake"
+    "/home/vboxuser/SocialRobotEar/build/ear/catkin_generated/installspace/earConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ear" TYPE FILE FILES "/home/vboxuser/catkin_ws/src/ear/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ear" TYPE FILE FILES "/home/vboxuser/SocialRobotEar/src/ear/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ear" TYPE PROGRAM FILES "/home/vboxuser/catkin_ws/build/ear/catkin_generated/installspace/ear.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ear" TYPE PROGRAM FILES "/home/vboxuser/SocialRobotEar/build/ear/catkin_generated/installspace/ear.py")
 endif()
 

@@ -37,6 +37,7 @@ class earwrapper:
 
     '''
 
+    #facing the same direction as the robot:
     #left ear:
         #min 3
         #3 is straight upward
@@ -50,7 +51,7 @@ class earwrapper:
     #considering x axis 0, y axis 90
     def convert_angle(self, msg):
         angle = msg.data
-        print("data: ", angle)
+        print("angle: ", angle)
         
         #3/90 = 1 degree
         left_degree = 3/90.0
@@ -100,19 +101,21 @@ class earwrapper:
         #convert degrees to ChangeDutyCycle amount and move ears
         self.convert_angle(inmsg)
         
+    #ear twitch, modify to make sleep time smaller
     def callback_twitch(self, msg):
-        self.left_ear.convert_angle(46)
-        self.right_ear.convert_angle(46)
-        time.sleep(0.001)
-        self.left_ear.convert_angle(45)
-        self.right_ear.convert_angle(45)
+        self.convert_angle(46)
+        self.convert_angle(46)
+        self.convert_angle(45)
+        self.convert_angle(45)
 
 
-    
+    #stop servos
     def stop(self):
+        print("Stopping...")
         self.left_ear.stop()
         self.right_ear.stop()
         GPIO.cleanup()
+
     
 
     def __init__(self):
@@ -137,6 +140,6 @@ class earwrapper:
 if __name__ == "__main__":
     rospy.init_node("ear_node")
     ear_wrapper = earwrapper()
-    rospy.on_shutdown(ear_wrapper.stop())
+    rospy.on_shutdown(ear_wrapper.stop)
     rospy.loginfo("Ear driver is now started, ready to get commands.")
     rospy.spin()

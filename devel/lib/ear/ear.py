@@ -3,7 +3,7 @@
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/home/vboxuser/catkin_ws/src/ear/src/earcode/ear.py'
+python_script = '/home/vboxuser/SocialRobotEar/src/ear/src/earcode/ear.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,
